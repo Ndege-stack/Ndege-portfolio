@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // --- Mobile Menu --- //
     const menu = document.querySelector('#menu-bars');
-    const navbar = document.querySelector('.header .nav');
+    const navbar = document.querySelector('.nav');
 
     if (menu && navbar) {
         menu.onclick = () => {
