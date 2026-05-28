@@ -1,205 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Philip Ndege</title>
-    <link rel="icon" href="logo.svg" type="image/svg+xml">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Philip Ndege | UI/UX Designer &amp; Developer</title>
+  <meta name="description" content="Philip Ndege — UI/UX Designer &amp; Developer. Human-centered design, front-end development, and Moodle platforms.">
+  <meta property="og:title" content="Philip Ndege | UI/UX Designer &amp; Developer">
+  <meta property="og:description" content="Human-centered design and front-end development — Moodle platforms, web apps, UI/UX systems.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="Images/IMG_2359.JPG">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="social-strip">
-        <a href="https://www.linkedin.com/in/philip-ndege-721208354?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://github.com/Ndege-stack" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="tel:+254796124982"><i class="fas fa-phone"></i></a>
+
+<div class="scroll-bar" id="scroll-bar"></div>
+
+<!-- NAV -->
+<nav class="site-nav" id="site-nav">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo">Philip Ndege</a>
+    <button class="nav-burger" id="nav-burger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-list" id="nav-list">
+      <li><a href="#home" class="nav-a">Home</a></li>
+      <li><a href="#projects" class="nav-a">Projects</a></li>
+      <li><a href="#about" class="nav-a">About</a></li>
+      <li><a href="#testimonials" class="nav-a">Testimonials</a></li>
+      <li><a href="#contact" class="nav-a">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <canvas id="hero-canvas" aria-hidden="true"></canvas>
+  <div class="hero-content">
+    <p class="hero-eyebrow">UI/UX Designer &amp; Developer</p>
+    <h1 class="hero-name" id="hero-name" aria-label="Philip Ndege">
+      <span class="name-row">
+        <span class="nl" data-dz="-620" data-dx="-90" data-dy="45">P</span><span class="nl" data-dz="-290" data-dx="55" data-dy="-35">h</span><span class="nl" data-dz="-740" data-dx="-25" data-dy="20">i</span><span class="nl" data-dz="-460" data-dx="85" data-dy="-55">l</span><span class="nl" data-dz="-185" data-dx="-75" data-dy="30">i</span><span class="nl" data-dz="-590" data-dx="65" data-dy="-40">p</span>
+      </span>
+      <span class="name-row">
+        <span class="nl" data-dz="-410" data-dx="75" data-dy="-65">N</span><span class="nl" data-dz="-660" data-dx="-45" data-dy="55">d</span><span class="nl" data-dz="-310" data-dx="115" data-dy="-25">e</span><span class="nl" data-dz="-530" data-dx="-65" data-dy="45">g</span><span class="nl" data-dz="-240" data-dx="35" data-dy="-35">e</span>
+      </span>
+    </h1>
+    <p class="hero-bio">I design like an artist, digitise content like a librarian on caffeine, and code front-end like my Wi-Fi bill depends on it.</p>
+    <div class="hero-ctas">
+      <a href="#projects" class="btn btn--primary">See My Work</a>
+      <a href="#contact" class="btn btn--ghost">Reach Out</a>
     </div>
-    <header class="sticky-header">
-        <div class="main-container">
-            <span>Philip Ndege</span>
-            <i class="fas fa-bars" id="menu-bars"></i>
-            <ul class="nav">
-                <li><a href="#home">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="#contact">Get In Touch</a></li>
-                <li>
-                    <button id="theme-toggle" class="theme-toggle-btn">
-                        <i class="fas fa-sun"></i>
-                        <i class="fas fa-moon"></i>
-                    </button>
-                </li>
-            </ul>
+  </div>
+  <div class="scroll-hint" aria-hidden="true">
+    <div class="scroll-mouse"><div class="scroll-dot"></div></div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="projects-section">
+  <div class="section-head reveal">
+    <span class="section-label">Selected Work</span>
+    <h2 class="section-title">Projects</h2>
+    <p class="section-sub">From concept to execution: strategy, creativity, and code creating seamless experiences.</p>
+  </div>
+  <div class="pstage" id="pstage">
+    <div class="pcard" data-idx="0">
+      <div class="pcard-inner">
+        <div class="pcard-media">
+          <img src="Images/Screenshot 2025-09-13 at 15.34.13.png" alt="Open University Kenya" loading="lazy">
+          <span class="pcard-tag">E-Learning Platform</span>
         </div>
-    </header>
-    <div class="main-container">
-        <section class="intro" id="home">
-            <!--
-            <div class="social-icons">
-                <a href="#">in</a>
-                <a href="#">Be</a>
-                <a href="#">tw</a>
-            </div>-->
-            <div class="content">
-                <div class="text-content">
-                    <h1>Philip Ndege</h1>
-                    <p>I design like an artist, digitise content like a librarian on caffeine, and code front-end like my Wi-Fi bill depends on it. Moodle platforms, portfolios, front-end dev,if it's digital, I'll make it look sharp, run smooth, and probably sneak in an Easter egg or two.</p>
-                    <a href="mailto:philipndege@icloud.com" class="button">Reach Out!</a>
-                </div>
-                <div class="image-placeholder">
-                    <img src="Images/IMG_2359.JPG" alt="Profile Photo" style="width:100%; height:100%; border-radius:50%;">
-                </div>
-            </div>
-            <div class="worked-with">
-                 <!--<button>OUK</button>
-                <button>YSK</button>
-               <button>PAYCHEX</button>
-                <button>elastic</button>
-                <button>stripe</button>-->
-            </div>
-        </section>
-
-        <section class="projects" id="projects">
-            <h2>Projects</h2>
-            <p class="description">From concept to execution, I design and develop digital solutions that solve real user and business challenges. Explore my work to see how strategy, creativity, and code come together to create seamless experiences.</p>
-            <div class="project-gallery-container">
-               <div class="project-gallery">
-                <div class="project-card">
-                    <a href="projects.html">
-                        <img src="Images/Screenshot 2025-09-13 at 15.34.13.png" alt="Edtech">
-                        <h4>Open University Kenya</h4>
-                    </a>
-                </div>
-                <div class="project-card">
-                    <a href="projects.html">
-                        <img src="Images/Screenshot 2026-01-12 at 19.02.18.png" alt="Kabarak Placeholder">
-                        <h4>Kabarak University ODeL</h4>
-                    </a>
-                </div>
-                <div class="project-card">
-                    <a href="projects.html">
-                        <img src="Images/Screenshot 2025-09-13 at 15.46.38.png" alt="Front-end">
-                        <h4>TraceHub</h4>
-                    </a>
-                </div>
-                <div class="project-card">
-                    <a href="projects.html">
-                        <img src="Images/Screenshot 2026-01-18 at 17.10.26.png" alt="Portfolio">
-                        <h4>The Polytiq</h4>
-                    </a>
-                </div>
-                <!-- Duplicated for seamless scroll -->
-                <div class="project-card">
-                    <a href="projects.html">
-                        <img src="Images/Screenshot 2025-09-13 at 15.34.13.png" alt="Edtech">
-                        <h4>Open University Kenya</h4>
-                    </a>
-                </div>
-                <div class="project-card">
-                    <a href="projects.html">
-                        <img src="Images/Screenshot 2026-01-12 at 19.02.18.png" alt="Kabarak Placeholder">
-                        <h4>Kabarak University ODeL</h4>
-                    </a>
-                </div>
-                <div class="project-card">
-                    <a href="projects.html">
-                        <img src="Images/Screenshot 2025-09-13 at 15.46.38.png" alt="Front-end">
-                        <h4>TraceHub</h4>
-                    </a>
-                </div>
-                <div class="project-card">
-                    <a href="projects.html">
-                        <img src="Images/Screenshot 2026-01-18 at 17.10.26.png" alt="Portfolio">
-                        <h4>The Polytiq</h4>
-                    </a>
-                </div>
-            </div>
-            </div>
-            <div style="text-align: center; margin-top: 40px;">
-                <a href="projects.html" class="button">View All Projects</a>
-            </div>
-        </section>
-
-        <section class="testimonials" id="testimonials">
-            <h2>Testimonials</h2>
-            <p class="description">Don’t just take my word for it, here’s how people I’ve worked with describe the experience of bringing ideas to life together.</p>
-            <div class="testimonial-container">
-                <div class="testimonial">
-                    <q>"Working with Ndege was a game-changer for our project. He transformed our vision into a sleek, user-friendly interface that our customers love. The attention to detail and design insight exceeded expectations."</q>
-                    <div class="client">
-                      <br>  
-                        <span>Ben Kyalo</span>
-                    </div>
-                </div>
-                <div class="testimonial">
-                    <q>"Our Moodle platform went from average to outstanding. Philip customised it with features that made learning more engaging and navigation effortless. We’ve seen a 30% increase in user engagement since launch."</q>
-                    <div class="client">
-                        <br>
-                        <span>Stanley Omondi</span>
-                    </div>
-                </div>
-                <div class="testimonial">
-                    <q>"Beyond his technical expertise, what stands out is his commitment to quality and innovation. He delivers on time, communicates clearly, and consistently goes the extra mile."</q>
-                    <div class="client">
-                       <br>
-                        <span>Samuel Onyango</span>
-                    </div>
-                </div>
-                <div class="testimonial">
-                    <q>"His ability to bridge design and front-end development is exceptional. Every element he builds not only looks great but performs flawlessly. A true professional who understands both creativity and functionality."</q>
-                    <div class="client">
-                       <br> <span>Martin Rajoro</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="about-me" id="about-me">
-            <h2>About Me</h2>
-            <p class="description">I'm Philip — the guy who mixes design flair with code logic and a pinch of caffeine. I make Moodle less moody, content less boring, and interfaces more human. Want the full story?</p>
-            <div class="work-container">
-                <div class="work-item-recent">
-                    <img src="Images/ChatGPT Image Sep 19, 2025 at 11_45_51 AM.png" alt="Work 1" class="about-me-image meet-philip-image">
-                    <p>I operate at the intersection of design and development, crafting digital experiences that are not only beautiful but also clear, functional, and human-centered. Discover my process and philosophy.</p>
-                    <a href="about.html"><button>Meet Philip ›</button></a>
-                </div>
-                <div class="work-item-recent">
-                    <img src="Images/ChatGPT Image Jan 21, 2026, 11_08_03 PM.png" alt="Work 2" class="about-me-image">
-                    <p>My design philosophy is built on a foundation of continuous learning and technical rigor. Explore the academic journey that shapes my work.</p>
-                    <a href="education.html"><button>Education story ›</button></a>
-                </div>
-            </div>
-        </section>
-
-        <section class="get-in-touch" id="contact">
-            <div class="contact-container">
-                <div class="contact-text">
-                    <h2>Have a project in mind?</h2>
-                    <p>I’m here to help you turn your ideas into reality. Whether you have a question or just want to say hi, feel free to drop me a line.</p>
-                    <a href="mailto:philipndege@icloud.com" class="contact-email">philipndege@icloud.com</a>
-                </div>
-                <div class="contact-form">
-                    <form action="https://formspree.io/f/mojjbegg" method="POST">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-                        </div>
-                        <button type="submit" class="submit-btn">Send Message ›</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-        <div class="footer">
-            <p>By PilotHaus</p>
+        <div class="pcard-foot">
+          <h3>Open University Kenya</h3>
+          <a href="project-ouk.html" class="btn btn--sm">View Case Study →</a>
         </div>
+      </div>
     </div>
-    <script src="chat.js"></script>
+    <div class="pcard" data-idx="1">
+      <div class="pcard-inner">
+        <div class="pcard-media">
+          <img src="Images/Screenshot 2026-01-12 at 19.02.18.png" alt="Kabarak University ODeL" loading="lazy">
+          <span class="pcard-tag">Moodle Development</span>
+        </div>
+        <div class="pcard-foot">
+          <h3>Kabarak University ODeL</h3>
+          <a href="project-kabarak.html" class="btn btn--sm">View Case Study →</a>
+        </div>
+      </div>
+    </div>
+    <div class="pcard" data-idx="2">
+      <div class="pcard-inner">
+        <div class="pcard-media">
+          <img src="Images/Screenshot 2025-09-13 at 15.46.38.png" alt="TraceHub" loading="lazy">
+          <span class="pcard-tag">Web Application</span>
+        </div>
+        <div class="pcard-foot">
+          <h3>TraceHub</h3>
+          <a href="project-tracehub.html" class="btn btn--sm">View Case Study →</a>
+        </div>
+      </div>
+    </div>
+    <div class="pcard" data-idx="3">
+      <div class="pcard-inner">
+        <div class="pcard-media">
+          <img src="Images/Screenshot 2026-01-18 at 17.10.26.png" alt="The Polytiq" loading="lazy">
+          <span class="pcard-tag">Website Design</span>
+        </div>
+        <div class="pcard-foot">
+          <h3>The Polytiq</h3>
+          <a href="project-the-polytiq.html" class="btn btn--sm">View Case Study →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pstage-nav" id="pstage-nav" aria-hidden="true"></div>
+  <div class="projects-cta-row">
+    <a href="projects.html" class="btn btn--outline">View All Projects →</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about-section">
+  <div class="about-canvas-col">
+    <canvas id="cube-canvas" aria-hidden="true"></canvas>
+  </div>
+  <div class="about-text-col">
+    <span class="section-label">About</span>
+    <div class="about-block reveal">
+      <h2>Designer &amp; Developer</h2>
+      <p>I operate at the intersection of aesthetics and logic — crafting digital experiences that are beautiful, clear, functional, and human-centered. My process begins with empathy and ends with precision.</p>
+      <a href="about.html" class="btn btn--primary">Meet Philip ›</a>
+    </div>
+    <div class="about-sep"></div>
+    <div class="about-block reveal">
+      <h2>Education &amp; Growth</h2>
+      <p>My design philosophy is built on continuous learning. Explore the academic journey and applied skills that shape my approach to every project.</p>
+      <a href="education.html" class="btn btn--outline">Education Story ›</a>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="testi-section">
+  <div class="section-head reveal">
+    <span class="section-label">Social Proof</span>
+    <h2 class="section-title">What People Say</h2>
+  </div>
+  <div class="tcarousel-scene">
+    <div class="tcarousel" id="tcarousel">
+      <div class="tcard">
+        <blockquote class="tcard-q">"Working with Ndege was a game-changer. He transformed our vision into a sleek, user-friendly interface that our customers love. The attention to detail exceeded expectations."</blockquote>
+        <footer class="tcard-author"><strong>Ben Kyalo</strong><span>Colleague </span></footer>
+      </div>
+      <div class="tcard">
+        <blockquote class="tcard-q">"Our Moodle platform went from average to outstanding. Philip customised it with features that made learning more engaging. We've seen a 30% increase in user engagement since launch."</blockquote>
+        <footer class="tcard-author"><strong>Stanley Omondi</strong><span>Colleague</span></footer>
+      </div>
+      <div class="tcard">
+        <blockquote class="tcard-q">"Beyond his technical expertise, what stands out is his commitment to quality and innovation. He delivers on time, communicates clearly, and consistently goes the extra mile."</blockquote>
+        <footer class="tcard-author"><strong>Samuel Onyango</strong><span>Client</span></footer>
+      </div>
+      <div class="tcard">
+        <blockquote class="tcard-q">"His ability to bridge design and front-end development is exceptional. Every element he builds not only looks great but performs flawlessly."</blockquote>
+        <footer class="tcard-author"><strong>Martin Rajoro</strong><span>Partner</span></footer>
+      </div>
+    </div>
+  </div>
+  <div class="tcarousel-controls">
+    <button class="tctrl-btn tctrl-prev" id="tprev" aria-label="Previous testimonial"><i class="fas fa-chevron-left"></i></button>
+    <div class="tcarousel-dots" id="tdots"></div>
+    <button class="tctrl-btn tctrl-next" id="tnext" aria-label="Next testimonial"><i class="fas fa-chevron-right"></i></button>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats-section" id="stats">
+  <div class="stats-grid">
+    <div class="stat-item reveal"><span class="stat-num" data-target="4">0</span><span class="stat-lbl">Projects Completed</span></div>
+    <div class="stat-item reveal"><span class="stat-num" data-target="2">0</span><span class="stat-lbl">Moodle Platforms</span></div>
+    <div class="stat-item reveal"><span class="stat-num" data-target="3">0</span><span class="stat-lbl">Clients Served</span></div>
+    <div class="stat-item reveal"><span class="stat-num" data-target="2">0</span><span class="stat-lbl">Years of Practice</span></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact-section">
+  <div class="contact-inner">
+    <div class="reveal">
+      <span class="section-label">Get In Touch</span>
+      <h2 class="section-title">Have a project in mind?</h2>
+      <p class="section-sub">Drop me a line and I'll get back to you as soon as possible.</p>
+    </div>
+    <form class="cform" action="https://formspree.io/f/mojjbegg" method="POST">
+      <div class="cform-row">
+        <div class="cform-group">
+          <label for="cf-name">Name</label>
+          <input type="text" id="cf-name" name="name" placeholder="Your name" required>
+        </div>
+        <div class="cform-group">
+          <label for="cf-email">Email</label>
+          <input type="email" id="cf-email" name="email" placeholder="you@email.com" required>
+        </div>
+      </div>
+      <div class="cform-group">
+        <label for="cf-msg">Message</label>
+        <textarea id="cf-msg" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+      </div>
+      <button type="submit" class="btn btn--primary">Send Message →</button>
+    </form>
+    <div class="contact-socials">
+      <a href="https://www.linkedin.com/in/philip-ndege-721208354" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/Ndege-stack" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="tel:+254796124982" aria-label="Call Philip"><i class="fas fa-phone"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <p>© <span id="footer-year"></span> · Made by Ndege</p>
+  <div class="footer-socials">
+    <a href="https://www.linkedin.com/in/philip-ndege-721208354" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://github.com/Ndege-stack" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+    <a href="tel:+254796124982" aria-label="Call Philip"><i class="fas fa-phone"></i></a>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/three@0.158.0/build/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
