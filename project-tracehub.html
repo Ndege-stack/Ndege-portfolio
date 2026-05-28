@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TraceHub — Case Study | Philip Ndege</title>
+    <meta name="description" content="Case study: TraceHub — a lost-and-found platform with real-time listings and smart search. Built by Philip Ndege.">
+    <meta property="og:title" content="TraceHub — Case Study | Philip Ndege">
+    <meta property="og:description" content="A lost-and-found platform that actually helps you find stuff. Real-time listings and smart search functionality.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="Images/Screenshot 2025-09-13 at 15.46.38.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="scroll-bar" id="scroll-bar"></div>
+
+<nav class="site-nav" id="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">Philip Ndege</a>
+    <button class="nav-burger" id="nav-burger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-list" id="nav-list">
+      <li><a href="index.html" class="nav-a">Home</a></li>
+      <li><a href="projects.html" class="nav-a active">Projects</a></li>
+      <li><a href="about.html" class="nav-a">About</a></li>
+      <li><a href="index.html#testimonials" class="nav-a">Testimonials</a></li>
+      <li><a href="index.html#contact" class="nav-a">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="page-main">
+  <section class="cs-hero">
+    <div class="cs-hero-inner">
+      <div class="cs-hero-img"><img src="Images/Screenshot 2025-09-13 at 15.46.38.png" alt="TraceHub" loading="lazy"></div>
+      <div class="cs-hero-meta">
+        <h1>TraceHub</h1>
+        <p class="cs-subtitle">A lost-and-found platform that actually helps you find stuff. Real-time listings and smart search.</p>
+        <div class="cs-badges"><span class="cs-badge">Web Application</span><span class="cs-badge">7 Weeks</span></div>
+        <a href="https://trace-hub.vercel.app" target="_blank" rel="noopener noreferrer" class="cs-live-link">View Live Site →</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="cs-body">
+    <div class="cs-grid cs-section reveal">
+      <div>
+        <h2>Project Overview</h2>
+        <p>TraceHub was born from a simple observation: losing things is frustrating, but finding them shouldn’t be. This platform transforms the chaotic experience of searching for lost items into a streamlined, hopeful process: connecting people who’ve lost items with those who’ve found them.</p>
+        <div class="tag-row"><span class="tag">Front-end Development</span><span class="tag">UI/UX Design</span></div>
+      </div>
+      <aside class="cs-sidebar">
+        <h3>Quick Facts</h3>
+        <ul>
+          <li><strong>Role:</strong> Full-Stack Developer</li>
+          <li><strong>Timeline:</strong> 7 weeks</li>
+          <li><strong>Tools:</strong> React, Node.js, MongoDB, Figma</li>
+          <li><strong>Live Site:</strong> <a href="https://trace-hub.vercel.app" target="_blank" rel="noopener noreferrer">trace-hub.vercel.app</a></li>
+        </ul>
+      </aside>
+    </div>
+
+    <div class="cs-section reveal">
+      <h2>The Challenge</h2>
+      <p class="challenge-intro">Traditional lost-and-found systems are fragmented, unreliable, and frustrating. The challenge was to create a platform that makes finding lost items not just possible, but genuinely hopeful and efficient.</p>
+      <div class="challenge-grid">
+        <div class="challenge-card"><h4>Real-time Updates</h4><p>Implement instant notifications when matching items are posted by other users.</p></div>
+        <div class="challenge-card"><h4>Intuitive Search</h4><p>Create powerful yet simple search and filtering capabilities for lost item attributes.</p></div>
+        <div class="challenge-card"><h4>Trust Building</h4><p>Design a verification system to reduce false claims and build community trust.</p></div>
+      </div>
+    </div>
+
+    <div class="cs-section reveal">
+      <h2>Design Process</h2>
+      <div class="process-steps">
+        <div class="process-step"><div class="step-num">01</div><div class="step-body"><h3>User Research</h3><p>Interviewed people who had lost and found items, mapped pain points in existing systems, and identified key user needs around trust, speed, and clarity.</p></div></div>
+        <div class="process-step"><div class="step-num">02</div><div class="step-body"><h3>Information Architecture</h3><p>Designed a logical category system and search flow that anticipates how users think about lost items and their attributes.</p></div></div>
+        <div class="process-step"><div class="step-num">03</div><div class="step-body"><h3>Interface Design</h3><p>Crafted a clean, mobile-first interface with emphasis on visual hierarchy and emotional design that builds trust and reduces anxiety.</p></div></div>
+        <div class="process-step"><div class="step-num">04</div><div class="step-body"><h3>Development &amp; Testing</h3><p>Built a responsive React application with real-time notifications, tested with actual users, and refined based on feedback.</p></div></div>
+      </div>
+    </div>
+
+    <div class="cs-section reveal">
+      <h2>Key Features</h2>
+      <div class="feature-grid">
+        <div class="feature-card"><div class="feat-icon"><i class="fas fa-bell"></i></div><h3>Real-time Notifications</h3><p>Instant alerts when matching items are posted, keeping users engaged throughout their search.</p></div>
+        <div class="feature-card"><div class="feat-icon"><i class="fas fa-filter"></i></div><h3>Smart Search</h3><p>Advanced filtering by category, location, date, and keywords with predictive search suggestions.</p></div>
+        <div class="feature-card"><div class="feat-icon"><i class="fas fa-shield-alt"></i></div><h3>Verification System</h3><p>Secure claim process with photo verification and user ratings to build community trust.</p></div>
+        <div class="feature-card"><div class="feat-icon"><i class="fas fa-mobile-alt"></i></div><h3>Mobile Optimised</h3><p>Progressive web app that works seamlessly on all devices, with offline capabilities for critical features.</p></div>
+      </div>
+    </div>
+
+    <div class="cs-section reveal">
+      <h2>Results &amp; Impact</h2>
+      <p>TraceHub transformed the lost-and-found experience from frustrating to hopeful, creating genuine connections between community members.</p>
+      <div class="metrics-grid">
+        <div class="metric-card"><div class="metric-num">500+</div><div class="metric-lbl">Items Reunited</div></div>
+        <div class="metric-card"><div class="metric-num">1.8s</div><div class="metric-lbl">Avg Load Time</div></div>
+        <div class="metric-card"><div class="metric-num">92%</div><div class="metric-lbl">User Success Rate</div></div>
+      </div>
+    </div>
+
+    <div class="next-cs reveal">
+      <p class="next-cs-label">Next Project</p>
+      <a href="project-the-polytiq.html" class="next-cs-card">
+        <div class="next-cs-img"><img src="Images/Screenshot 2026-01-18 at 17.10.26.png" alt="The Polytiq" loading="lazy"></div>
+        <div class="next-cs-body">
+          <h3>The Polytiq</h3>
+          <p>A calm, intelligent space for complex ideas.</p>
+          <span>View Case Study →</span>
+        </div>
+      </a>
+    </div>
+
+    <div style="text-align:center;margin-top:56px;">
+      <a href="projects.html" class="btn btn--outline">← All Projects</a>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>© <span id="footer-year"></span> · Made by Ndege</p>
+  <div class="footer-socials">
+    <a href="https://www.linkedin.com/in/philip-ndege-721208354" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://github.com/Ndege-stack" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+    <a href="tel:+254796124982" aria-label="Call Philip"><i class="fas fa-phone"></i></a>
+  </div>
+</footer>
+<script src="js/nav.js"></script>
+</body>
+</html>
