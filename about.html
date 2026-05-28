@@ -3,87 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | Philip Ndege</title>
-    <link rel="icon" href="logo.svg" type="image/svg+xml">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>About | Philip Ndege — UI/UX Designer &amp; Developer</title>
+    <meta name="description" content="Philip Ndege — designer and developer at the intersection of aesthetics and logic. Building human-centered digital experiences.">
+    <meta property="og:title" content="About | Philip Ndege">
+    <meta property="og:description" content="Designer and developer at the intersection of aesthetics and logic. Building human-centered digital experiences.">
+    <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="social-strip">
-        <a href="https://www.linkedin.com/in/philip-ndege-721208354?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://github.com/Ndege-stack" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="tel:+254796124982"><i class="fas fa-phone"></i></a>
-    </div>
-    <header class="sticky-header">
-        <div class="main-container">
-            <span>Philip Ndege</span>
-            <i class="fas fa-bars" id="menu-bars"></i>
-            <ul class="nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="about.html">About Me</a></li>
-                <li><a href="index.html#contact">Get In Touch</a></li>
-                <li>
-                    <button id="theme-toggle" class="theme-toggle-btn">
-                        <i class="fas fa-sun"></i>
-                        <i class="fas fa-moon"></i>
-                    </button>
-                </li>
-            </ul>
-        </div>
-    </header>
 
-    <main class="about-container">
-        <section class="about-hero">
-            <h1>I believe great design is silent. It solves problems you never knew you had.</h1>
-            <p class="subtitle">My work is rooted in the conviction that design is not decoration—it is the thoughtful, intentional craft of making technology feel human.</p>
-        </section>
+<div class="scroll-bar" id="scroll-bar"></div>
 
-        <section class="about-content">
-            <div class="about-section">
-                <h2>Who I Am</h2>
-                <p>I am a designer and developer who operates at the intersection of aesthetics and logic. My passion lies in translating complex user needs into clear, beautiful, and functional digital experiences. With a relentless curiosity and a disciplined eye for detail, I build not just interfaces, but understanding.</p>
-            </div>
+<nav class="site-nav" id="site-nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">Philip Ndege</a>
+    <button class="nav-burger" id="nav-burger" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-list" id="nav-list">
+      <li><a href="index.html" class="nav-a">Home</a></li>
+      <li><a href="projects.html" class="nav-a">Projects</a></li>
+      <li><a href="about.html" class="nav-a active">About</a></li>
+      <li><a href="index.html#testimonials" class="nav-a">Testimonials</a></li>
+      <li><a href="index.html#contact" class="nav-a">Contact</a></li>
+    </ul>
+  </div>
+</nav>
 
-            <div class="about-section skills-section">
-                <h2>My Craft</h2>
-                <div class="skills-grid">
-                    <div class="skill-item">
-                        <h3>UI/UX Design</h3>
-                        <p>From user research and wireframing to creating comprehensive visual systems, I design with purpose, ensuring every element serves the user's goal.</p>
-                    </div>
-                    <div class="skill-item">
-                        <h3>Front-End Development</h3>
-                        <p>With a mastery of HTML, CSS, and JavaScript, I bring designs to life with clean, performant, and accessible code within modern development workflows.</p>
-                    </div>
-                    <div class="skill-item">
-                        <h3>Design Systems</h3>
-                        <p>I build and maintain scalable design systems that ensure brand consistency, streamline development, and elevate the user experience across all touchpoints.</p>
-                    </div>
-                    <div class="skill-item">
-                        <h3>Moodle & E-Learning</h3>
-                        <p>I specialize in transforming e-learning platforms like Moodle into engaging, intuitive, and effective educational environments.</p>
-                    </div>
-                </div>
-            </div>
+<main class="page-main">
+  <div class="page-hero reveal">
+    <span class="section-label">About</span>
+    <h1>I believe great design is silent. It solves problems you never knew you had.</h1>
+    <p class="page-sub">My work is rooted in the conviction that design is not decoration; it is the thoughtful, intentional craft of making technology feel human.</p>
+  </div>
 
-            <div class="about-section">
-                <h2>My Process</h2>
-                <p>My approach is structured yet fluid, balancing a methodical process with creative exploration. It begins with deep empathy—understanding the user’s world. From there, I define the core problem, design with clear intent, and build with precision. I thrive on the details, from the rhythm of typography to the smoothness of an animation, because I know that excellence is the sum of a thousand small, deliberate choices.</p>
-            </div>
-
-            <div class="about-section vision-section">
-                <h2>My Vision</h2>
-                <p>My goal is to become a world-class UI/UX Engineer. This vision is grounded in a commitment to lifelong learning and the disciplined application of my craft. I aim to build solutions that are not only aesthetically pleasing but are also intuitive, impactful, and solve real-world problems with clarity and purpose.</p>
-            </div>
-        </section>
-    </main>
-
-    <div class="footer">
-        <p>By PilotHaus</p>
+  <div class="page-content">
+    <div class="content-section reveal">
+      <h2>Who I Am</h2>
+      <p>I am a designer and developer who operates at the intersection of aesthetics and logic. My passion lies in translating complex user needs into clear, beautiful, and functional digital experiences. With a relentless curiosity and a disciplined eye for detail, I build not just interfaces, but understanding.</p>
     </div>
 
-    <script src="chat.js"></script>
+    <div class="content-sep"></div>
+
+    <div class="content-section reveal">
+      <h2>My Craft</h2>
+      <div class="skills-grid">
+        <div class="skill-card"><h3>UI/UX Design</h3><p>From user research and wireframing to comprehensive visual systems — I design with purpose, ensuring every element serves the user's goal.</p></div>
+        <div class="skill-card"><h3>Front-End Development</h3><p>With mastery of HTML, CSS, and JavaScript, I bring designs to life with clean, performant, and accessible code within modern workflows.</p></div>
+        <div class="skill-card"><h3>Design Systems</h3><p>I build and maintain scalable design systems that ensure brand consistency, streamline development, and elevate UX across all touchpoints.</p></div>
+        <div class="skill-card"><h3>Moodle &amp; E-Learning</h3><p>I specialise in transforming e-learning platforms like Moodle into engaging, intuitive, and effective educational environments.</p></div>
+      </div>
+    </div>
+
+    <div class="content-sep"></div>
+
+    <div class="content-section reveal">
+      <h2>My Process</h2>
+      <p>My approach is structured yet fluid; balancing a methodical process with creative exploration. It begins with deep empathy: understanding the user's world. From there, I define the core problem, design with clear intent, and build with precision. I thrive on the details, from the rhythm of typography to the smoothness of an animation, because excellence is the sum of a thousand small, deliberate choices.</p>
+    </div>
+
+    <div class="content-sep"></div>
+
+    <div class="content-section reveal">
+      <h2>My Vision</h2>
+      <p>My goal is to become a world-class UI/UX Engineer, grounded in lifelong learning and the disciplined application of craft. I aim to build solutions that are not only aesthetically pleasing but also intuitive, impactful, and solve real-world problems with clarity and purpose.</p>
+      <div style="margin-top:32px;display:flex;gap:14px;flex-wrap:wrap;">
+        <a href="education.html" class="btn btn--outline">Education Story →</a>
+        <a href="index.html#contact" class="btn btn--primary">Work With Me →</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <p>© <span id="footer-year"></span> · Made by Ndege</p>
+  <div class="footer-socials">
+    <a href="https://www.linkedin.com/in/philip-ndege-721208354" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+    <a href="https://github.com/Ndege-stack" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+    <a href="tel:+254796124982" aria-label="Call Philip"><i class="fas fa-phone"></i></a>
+  </div>
+</footer>
+<script src="js/nav.js"></script>
 </body>
 </html>
